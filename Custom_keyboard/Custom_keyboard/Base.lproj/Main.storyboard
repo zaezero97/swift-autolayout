@@ -45,7 +45,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="firstTextField" destination="ypO-dU-p4B" id="u8L-7a-BIj"/>
+                        <outlet property="firstTextField" destination="ypO-dU-p4B" id="H2K-qQ-J1V"/>
+                        <outlet property="secondTextField" destination="2j5-P5-BZn" id="8H9-Vc-vAa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
