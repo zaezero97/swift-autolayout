@@ -13,6 +13,8 @@
 		AE929667272BB0D8004BA0D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE929665272BB0D8004BA0D8 /* Main.storyboard */; };
 		AE929669272BB0D9004BA0D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE929668272BB0D9004BA0D8 /* Assets.xcassets */; };
 		AE92966C272BB0D9004BA0D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE92966A272BB0D9004BA0D8 /* LaunchScreen.storyboard */; };
+		AE929674272BB13B004BA0D8 /* Cert_BG.PNG in Resources */ = {isa = PBXBuildFile; fileRef = AE929673272BB13B004BA0D8 /* Cert_BG.PNG */; };
+		AE929676272BB144004BA0D8 /* Cert_Sample.PNG in Resources */ = {isa = PBXBuildFile; fileRef = AE929675272BB144004BA0D8 /* Cert_Sample.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AE929668272BB0D9004BA0D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE92966B272BB0D9004BA0D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE92966D272BB0D9004BA0D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE929673272BB13B004BA0D8 /* Cert_BG.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cert_BG.PNG; path = "../../../../../Downloads/Lecture Image Resource/Cert_BG.PNG"; sourceTree = "<group>"; };
+		AE929675272BB144004BA0D8 /* Cert_Sample.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cert_Sample.PNG; path = "../../../../../Downloads/Lecture Image Resource/Cert_Sample.PNG"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				AE929668272BB0D9004BA0D8 /* Assets.xcassets */,
 				AE92966A272BB0D9004BA0D8 /* LaunchScreen.storyboard */,
 				AE92966D272BB0D9004BA0D8 /* Info.plist */,
+				AE929673272BB13B004BA0D8 /* Cert_BG.PNG */,
+				AE929675272BB144004BA0D8 /* Cert_Sample.PNG */,
 			);
 			path = Dynamic_Font;
 			sourceTree = "<group>";
@@ -125,6 +131,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE929676272BB144004BA0D8 /* Cert_Sample.PNG in Resources */,
+				AE929674272BB13B004BA0D8 /* Cert_BG.PNG in Resources */,
 				AE92966C272BB0D9004BA0D8 /* LaunchScreen.storyboard in Resources */,
 				AE929669272BB0D9004BA0D8 /* Assets.xcassets in Resources */,
 				AE929667272BB0D8004BA0D8 /* Main.storyboard in Resources */,
