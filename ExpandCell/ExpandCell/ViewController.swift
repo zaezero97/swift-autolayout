@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         
         let textArray = ["short Text", "long long long long long long long long long long long long long long long long long long long long long long long long long long",
                          "short Text", "long long long long long long long long long long long long long long long long long long long long long long long long long long",
+                         "short Text", "long long long long long long long long long long long long long long long long long long long long long long long long long long",
                          "short Text", "long long long long long long long long long long long long long long long long long long long long long long long long long long"]
         for (_,value) in textArray.enumerated(){
             dataModels.append(ExpandDataModel.init(description: value, isExpand: false))
@@ -56,7 +57,18 @@ extension ViewController : UITableViewDataSource{
 extension ViewController : UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         dataModels[indexPath.row].isExpand = !dataModels[indexPath.row].isExpand
+        // 펼치고 닫았을 때 부자연스러운 문제 발생
+        // 1. heightForRowAt 에서 정확한 높이를 지정
+        // 2. tableView.reloadData() 어느정도 해결
+        // 3. 어느정도 해결
+        //  tableView.estimatedSectionHeaderHeight = 0
+        //  tableView.estimatedSectionFooterHeight = 0
         
-        tableView.reloadRows(at: [indexPath], with: .automatic)
+        // 4. 애니메이션 효과 없앤다. 거의 확실히 해결
+        //  UIView.setAnimationsEnabled(false)
+        //  tableView.reloadRows(at: [indexPath], with: .none)
+        //   UIView.setAnimationsEnabled(true)
+        
+        tableView.reloadRows(at: [indexPath], with: .none)
     }
 }
