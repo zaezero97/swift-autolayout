@@ -1,24 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExpandCell" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gBj-iL-m6y">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="expandCell_ID" rowHeight="226" id="CVq-6W-0l7" customClass="ExpandCell" customModule="ExpandCell" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="226"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CVq-6W-0l7" id="cfQ-II-Bdp">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="226"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl.png" translatesAutoresizingMaskIntoConstraints="NO" id="hUU-4n-PYz">
+                                                    <rect key="frame" x="15" y="15" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="Rng-bk-glH"/>
+                                                        <constraint firstAttribute="width" constant="50" id="T0s-Qq-BVk"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nI5-Q8-RhV">
+                                                    <rect key="frame" x="80" y="29.5" width="319" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMT-BH-dI4">
+                                                    <rect key="frame" x="15" y="80" width="384" height="131"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="AMT-BH-dI4" secondAttribute="trailing" constant="15" id="4no-00-BSc"/>
+                                                <constraint firstItem="nI5-Q8-RhV" firstAttribute="leading" secondItem="hUU-4n-PYz" secondAttribute="trailing" constant="15" id="4tg-r7-Qcd"/>
+                                                <constraint firstAttribute="bottom" secondItem="AMT-BH-dI4" secondAttribute="bottom" constant="15" id="KEc-g1-xOl"/>
+                                                <constraint firstAttribute="trailing" secondItem="nI5-Q8-RhV" secondAttribute="trailing" constant="15" id="NUr-bt-eqT"/>
+                                                <constraint firstItem="hUU-4n-PYz" firstAttribute="leading" secondItem="cfQ-II-Bdp" secondAttribute="leading" constant="15" id="R3z-4R-D45"/>
+                                                <constraint firstItem="AMT-BH-dI4" firstAttribute="leading" secondItem="cfQ-II-Bdp" secondAttribute="leading" constant="15" id="Wk6-nI-pSp"/>
+                                                <constraint firstItem="hUU-4n-PYz" firstAttribute="top" secondItem="cfQ-II-Bdp" secondAttribute="top" constant="15" id="ZqM-fm-QJT"/>
+                                                <constraint firstItem="AMT-BH-dI4" firstAttribute="top" secondItem="hUU-4n-PYz" secondAttribute="bottom" constant="15" id="qnr-zN-zXc"/>
+                                                <constraint firstItem="nI5-Q8-RhV" firstAttribute="centerY" secondItem="hUU-4n-PYz" secondAttribute="centerY" id="sda-4D-Cuq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.51739159889999997" green="1" blue="0.2758827968" alpha="0.2043473639" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="decriptionLabel" destination="AMT-BH-dI4" id="Vai-ll-Dxx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gBj-iL-m6y" secondAttribute="trailing" id="9ol-lX-UfN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gBj-iL-m6y" secondAttribute="bottom" id="VSA-7Z-Ggm"/>
+                            <constraint firstItem="gBj-iL-m6y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y1g-f1-ArM"/>
+                            <constraint firstItem="gBj-iL-m6y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="h4E-kP-veM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="gBj-iL-m6y" id="qIt-Ox-r6t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="86.383928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="girl.png" width="973.5211181640625" height="973.5211181640625"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
