@@ -65,6 +65,24 @@
                                     <constraint firstItem="C6o-CQ-NZX" firstAttribute="width" secondItem="oeV-Eu-ru2" secondAttribute="width" id="zc8-jr-NXn"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkQ-JL-CBL">
+                                <rect key="frame" x="46" y="652" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="style1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2kf-qD-Ss4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhP-3C-WWZ">
+                                <rect key="frame" x="129" y="651" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="style2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2e5-7I-Pqd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -74,6 +92,13 @@
                             <constraint firstItem="f8Z-4e-gLS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wmk-w6-RJ6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="graph1Height" destination="HYU-wi-xhm" id="LN2-Xq-jMP"/>
+                        <outlet property="graph2Height" destination="Z25-i4-ajO" id="giG-Fi-mC3"/>
+                        <outlet property="graph3Height" destination="yvb-6z-Piw" id="DqE-Oh-AbM"/>
+                        <outlet property="graph4Height" destination="HDn-34-LrU" id="7gi-vZ-Y4M"/>
+                        <outlet property="graph5Height" destination="imA-TO-Aad" id="I4b-I8-45B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
