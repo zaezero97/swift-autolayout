@@ -29,6 +29,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="">
                                     <backgroundConfiguration key="background" image="add_icon_green.png"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="jq8-n3-Iuo" kind="show" identifier="showPopup" animates="NO" id="cT2-ZL-Xv7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -47,16 +50,24 @@
             </objects>
             <point key="canvasLocation" x="30" y="70"/>
         </scene>
-        <!--View Controller-->
+        <!--Floating Button List View Controller-->
         <scene sceneID="sDa-Y2-R2o">
             <objects>
-                <viewController id="jq8-n3-Iuo" sceneMemberID="viewController">
+                <viewController id="jq8-n3-Iuo" customClass="FloatingButtonListViewController" customModule="Floating_Button" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V5W-yl-l6M">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQY-6L-1Ya">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="k4d-7f-ZrY">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ww6-gk-e7F">
-                                <rect key="frame" x="319" y="527" width="50" height="50"/>
+                                <rect key="frame" x="319" y="473" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="AkM-pY-Cb1"/>
                                     <constraint firstAttribute="width" constant="50" id="Mzx-tx-0V2"/>
@@ -67,7 +78,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBs-Go-ksk">
-                                <rect key="frame" x="319" y="607" width="50" height="50"/>
+                                <rect key="frame" x="319" y="553" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="H7k-4l-Rxe"/>
                                     <constraint firstAttribute="height" constant="50" id="MvZ-Rc-skU"/>
@@ -78,7 +89,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pK-B0-qeV">
-                                <rect key="frame" x="319" y="687" width="50" height="50"/>
+                                <rect key="frame" x="319" y="633" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="K4w-Ux-nSu"/>
                                     <constraint firstAttribute="width" constant="50" id="pKu-iw-NuN"/>
@@ -88,8 +99,8 @@
                                     <backgroundConfiguration key="background" image="food3.png"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6e-jh-wSN">
-                                <rect key="frame" x="314" y="762" width="60" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6e-jh-wSN">
+                                <rect key="frame" x="314" y="707" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="5gy-Kj-emO"/>
                                     <constraint firstAttribute="width" constant="60" id="v84-eB-YmV"/>
@@ -101,18 +112,22 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F1u-KV-mN2"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="T6e-jh-wSN" firstAttribute="centerY" secondItem="ww6-gk-e7F" secondAttribute="centerY" constant="240" id="IEB-6K-QRa"/>
+                            <constraint firstAttribute="bottom" secondItem="hQY-6L-1Ya" secondAttribute="bottom" id="KLh-Gl-m6i"/>
                             <constraint firstItem="F1u-KV-mN2" firstAttribute="bottom" secondItem="T6e-jh-wSN" secondAttribute="bottom" constant="40" id="PlL-Hu-mfK"/>
                             <constraint firstItem="T6e-jh-wSN" firstAttribute="centerX" secondItem="xBs-Go-ksk" secondAttribute="centerX" id="VCW-7I-IE6"/>
                             <constraint firstItem="T6e-jh-wSN" firstAttribute="centerX" secondItem="6pK-B0-qeV" secondAttribute="centerX" id="Xlp-Sa-uNu"/>
+                            <constraint firstItem="hQY-6L-1Ya" firstAttribute="top" secondItem="V5W-yl-l6M" secondAttribute="top" id="agx-Lc-gAy"/>
                             <constraint firstItem="T6e-jh-wSN" firstAttribute="centerY" secondItem="xBs-Go-ksk" secondAttribute="centerY" constant="160" id="bJt-qx-juQ"/>
                             <constraint firstItem="T6e-jh-wSN" firstAttribute="centerX" secondItem="ww6-gk-e7F" secondAttribute="centerX" id="bvH-j3-N0q"/>
                             <constraint firstItem="F1u-KV-mN2" firstAttribute="trailing" secondItem="T6e-jh-wSN" secondAttribute="trailing" constant="40" id="h1U-Xb-mKG"/>
+                            <constraint firstItem="F1u-KV-mN2" firstAttribute="trailing" secondItem="hQY-6L-1Ya" secondAttribute="trailing" id="lah-YD-8HO"/>
+                            <constraint firstItem="hQY-6L-1Ya" firstAttribute="leading" secondItem="F1u-KV-mN2" secondAttribute="leading" id="pUl-ZU-Z74"/>
                             <constraint firstItem="T6e-jh-wSN" firstAttribute="centerY" secondItem="6pK-B0-qeV" secondAttribute="centerY" constant="80" id="ttx-eT-k06"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="meG-FS-Oyg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kNY-e8-bUb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
