@@ -13,6 +13,8 @@
 		AEA5337B273246960093504F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA53379273246960093504F /* Main.storyboard */; };
 		AEA5337D273246980093504F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA5337C273246980093504F /* Assets.xcassets */; };
 		AEA53380273246980093504F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA5337E273246980093504F /* LaunchScreen.storyboard */; };
+		AEA53388273247030093504F /* DiagonalCustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA53387273247030093504F /* DiagonalCustomImageView.swift */; };
+		AEA5338A27324C680093504F /* night_sky.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA5338927324C680093504F /* night_sky.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AEA5337C273246980093504F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEA5337F273246980093504F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEA53381273246980093504F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEA53387273247030093504F /* DiagonalCustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagonalCustomImageView.swift; sourceTree = "<group>"; };
+		AEA5338927324C680093504F /* night_sky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = night_sky.png; path = "../../../../../Downloads/Lecture Image Resource/night_sky.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				AEA5337C273246980093504F /* Assets.xcassets */,
 				AEA5337E273246980093504F /* LaunchScreen.storyboard */,
 				AEA53381273246980093504F /* Info.plist */,
+				AEA53387273247030093504F /* DiagonalCustomImageView.swift */,
+				AEA5338927324C680093504F /* night_sky.png */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEA5338A27324C680093504F /* night_sky.png in Resources */,
 				AEA53380273246980093504F /* LaunchScreen.storyboard in Resources */,
 				AEA5337D273246980093504F /* Assets.xcassets in Resources */,
 				AEA5337B273246960093504F /* Main.storyboard in Resources */,
@@ -138,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEA53388273247030093504F /* DiagonalCustomImageView.swift in Sources */,
 				AEA53378273246960093504F /* ViewController.swift in Sources */,
 				AEA53374273246960093504F /* AppDelegate.swift in Sources */,
 				AEA53376273246960093504F /* SceneDelegate.swift in Sources */,
