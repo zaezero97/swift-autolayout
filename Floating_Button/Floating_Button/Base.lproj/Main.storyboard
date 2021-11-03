@@ -109,6 +109,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="">
                                     <backgroundConfiguration key="background" image="add_icon_green.png"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="dismissFloating:" destination="jq8-n3-Iuo" eventType="touchUpInside" id="Ln3-ZQ-xIw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F1u-KV-mN2"/>
@@ -128,6 +131,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="meG-FS-Oyg"/>
+                    <connections>
+                        <outlet property="btn1CenterY" destination="IEB-6K-QRa" id="P3L-5g-pks"/>
+                        <outlet property="btn2CenterY" destination="bJt-qx-juQ" id="qc5-cd-Tvz"/>
+                        <outlet property="btn3CenterY" destination="ttx-eT-k06" id="mEe-GD-MPH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kNY-e8-bUb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
