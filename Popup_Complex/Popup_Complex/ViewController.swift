@@ -14,6 +14,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func showPopup(_ sender: Any) {
+        let storyboard = UIStoryboard.init(name: "PopupViewController", bundle: nil)
+        let popVC = storyboard.instantiateViewController(withIdentifier: "popupVC")
+        
+        popVC.modalPresentationStyle = .overCurrentContext
+        self.present(popVC, animated: true, completion: nil)
+    }
 }
 
