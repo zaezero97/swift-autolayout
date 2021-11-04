@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="168" id="KGk-i7-Jjw" customClass="MyCell" customModule="ChatingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="168"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="389" height="168"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myBubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fpi-bZ-eop">
+                        <rect key="frame" x="182.5" y="10" width="196.5" height="148"/>
+                        <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="aaaaaaaaaaaaaaaaaaaa" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kpb-KT-gcm">
+                        <rect key="frame" x="192.5" y="10" width="161.5" height="148"/>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021.1.18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgc-Rz-Oiw">
+                        <rect key="frame" x="130" y="144.5" width="48.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fpi-bZ-eop" firstAttribute="bottom" secondItem="xgc-Rz-Oiw" secondAttribute="bottom" id="Fwc-2F-imb"/>
+                    <constraint firstAttribute="trailing" secondItem="Fpi-bZ-eop" secondAttribute="trailing" constant="10" id="Mgo-67-HVP"/>
+                    <constraint firstItem="Fpi-bZ-eop" firstAttribute="bottom" secondItem="kpb-KT-gcm" secondAttribute="bottom" id="P6W-O0-0cM"/>
+                    <constraint firstItem="Fpi-bZ-eop" firstAttribute="top" secondItem="kpb-KT-gcm" secondAttribute="top" id="W24-Yw-qhX"/>
+                    <constraint firstItem="Fpi-bZ-eop" firstAttribute="leading" secondItem="xgc-Rz-Oiw" secondAttribute="trailing" constant="4" id="WDp-P1-B1x"/>
+                    <constraint firstAttribute="bottom" secondItem="Fpi-bZ-eop" secondAttribute="bottom" constant="10" id="Zff-C6-hVf"/>
+                    <constraint firstItem="Fpi-bZ-eop" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gqB-qx-Ujt"/>
+                    <constraint firstItem="Fpi-bZ-eop" firstAttribute="trailing" secondItem="kpb-KT-gcm" secondAttribute="trailing" constant="25" id="swu-GW-8CA"/>
+                    <constraint firstItem="Fpi-bZ-eop" firstAttribute="leading" secondItem="kpb-KT-gcm" secondAttribute="leading" constant="-10" id="yw7-Q8-hp8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="181.8840579710145" y="127.23214285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="myBubble.png" width="66.5" height="52.5"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
