@@ -96,6 +96,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cnr-vG-YpP" secondAttribute="trailing" constant="20" id="zXC-9r-PZp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailErrorLabel" destination="Gyo-bC-FVN" id="cJk-oe-OGw"/>
+                        <outlet property="emailTextField" destination="cnr-vG-YpP" id="TYk-1D-DBC"/>
+                        <outlet property="passwordErrorLabel" destination="7If-TM-MbY" id="naR-0b-I2P"/>
+                        <outlet property="passwordTextField" destination="MiF-lg-3qu" id="Zy7-uw-HjE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
