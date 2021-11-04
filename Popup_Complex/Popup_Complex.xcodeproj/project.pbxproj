@@ -13,6 +13,10 @@
 		AEAAA701273362E4004F7942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEAAA6FF273362E4004F7942 /* Main.storyboard */; };
 		AEAAA703273362E5004F7942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEAAA702273362E5004F7942 /* Assets.xcassets */; };
 		AEAAA706273362E5004F7942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEAAA704273362E5004F7942 /* LaunchScreen.storyboard */; };
+		AEAAA70E273363FE004F7942 /* PopupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEAAA70D273363FE004F7942 /* PopupViewController.storyboard */; };
+		AEAAA71027336420004F7942 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAAA70F27336420004F7942 /* PopupViewController.swift */; };
+		AEAAA7122733658A004F7942 /* night_sky.png in Resources */ = {isa = PBXBuildFile; fileRef = AEAAA7112733658A004F7942 /* night_sky.png */; };
+		AEAAA714273365CC004F7942 /* done_check_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AEAAA713273365CC004F7942 /* done_check_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		AEAAA702273362E5004F7942 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEAAA705273362E5004F7942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEAAA707273362E5004F7942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEAAA70D273363FE004F7942 /* PopupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopupViewController.storyboard; sourceTree = "<group>"; };
+		AEAAA70F27336420004F7942 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		AEAAA7112733658A004F7942 /* night_sky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = night_sky.png; path = "../../../../../Downloads/Lecture Image Resource/night_sky.png"; sourceTree = "<group>"; };
+		AEAAA713273365CC004F7942 /* done_check_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = done_check_icon.png; path = "../../../../../Downloads/Lecture Image Resource/done_check_icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +68,13 @@
 				AEAAA6FB273362E4004F7942 /* SceneDelegate.swift */,
 				AEAAA6FD273362E4004F7942 /* ViewController.swift */,
 				AEAAA6FF273362E4004F7942 /* Main.storyboard */,
+				AEAAA70D273363FE004F7942 /* PopupViewController.storyboard */,
+				AEAAA70F27336420004F7942 /* PopupViewController.swift */,
 				AEAAA702273362E5004F7942 /* Assets.xcassets */,
 				AEAAA704273362E5004F7942 /* LaunchScreen.storyboard */,
 				AEAAA707273362E5004F7942 /* Info.plist */,
+				AEAAA7112733658A004F7942 /* night_sky.png */,
+				AEAAA713273365CC004F7942 /* done_check_icon.png */,
 			);
 			path = Popup_Complex;
 			sourceTree = "<group>";
@@ -125,7 +137,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEAAA70E273363FE004F7942 /* PopupViewController.storyboard in Resources */,
+				AEAAA714273365CC004F7942 /* done_check_icon.png in Resources */,
 				AEAAA706273362E5004F7942 /* LaunchScreen.storyboard in Resources */,
+				AEAAA7122733658A004F7942 /* night_sky.png in Resources */,
 				AEAAA703273362E5004F7942 /* Assets.xcassets in Resources */,
 				AEAAA701273362E4004F7942 /* Main.storyboard in Resources */,
 			);
@@ -141,6 +156,7 @@
 				AEAAA6FE273362E4004F7942 /* ViewController.swift in Sources */,
 				AEAAA6FA273362E4004F7942 /* AppDelegate.swift in Sources */,
 				AEAAA6FC273362E4004F7942 /* SceneDelegate.swift in Sources */,
+				AEAAA71027336420004F7942 /* PopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
