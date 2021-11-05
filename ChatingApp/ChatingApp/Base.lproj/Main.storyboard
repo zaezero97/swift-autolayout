@@ -17,11 +17,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Lr8-WE-WhT">
-                                <rect key="frame" x="0.0" y="44" width="414" height="770"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZB-hi-tPk">
-                                <rect key="frame" x="0.0" y="814" width="414" height="48"/>
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="f" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9JJ-jY-u1g">
                                         <rect key="frame" x="4" y="4" width="353.5" height="40"/>
@@ -34,9 +34,12 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XU2-Jl-BJf">
-                                        <rect key="frame" x="361.5" y="4" width="48.5" height="40"/>
+                                        <rect key="frame" x="361.5" y="4" width="48.5" height="36"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="전송"/>
+                                        <connections>
+                                            <action selector="sendString:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SFg-Nt-UQj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -44,7 +47,7 @@
                                     <constraint firstItem="XU2-Jl-BJf" firstAttribute="top" secondItem="iZB-hi-tPk" secondAttribute="top" constant="4" id="0hL-PP-NkJ"/>
                                     <constraint firstAttribute="trailing" secondItem="XU2-Jl-BJf" secondAttribute="trailing" constant="4" id="0uh-mp-qUH"/>
                                     <constraint firstItem="9JJ-jY-u1g" firstAttribute="leading" secondItem="iZB-hi-tPk" secondAttribute="leading" constant="4" id="CGr-g7-8FP"/>
-                                    <constraint firstAttribute="bottom" secondItem="9JJ-jY-u1g" secondAttribute="bottom" constant="4" id="ElU-rV-5jy"/>
+                                    <constraint firstAttribute="bottom" secondItem="9JJ-jY-u1g" secondAttribute="bottom" id="ElU-rV-5jy"/>
                                     <constraint firstItem="XU2-Jl-BJf" firstAttribute="leading" secondItem="9JJ-jY-u1g" secondAttribute="trailing" constant="4" id="LIq-Zg-Ggc"/>
                                     <constraint firstAttribute="bottom" secondItem="XU2-Jl-BJf" secondAttribute="bottom" constant="4" id="kJA-H2-pst"/>
                                     <constraint firstItem="9JJ-jY-u1g" firstAttribute="top" secondItem="iZB-hi-tPk" secondAttribute="top" constant="4" id="paY-dU-eN4"/>
@@ -63,6 +66,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iZB-hi-tPk" secondAttribute="bottom" id="yPr-uR-xlp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chatTableView" destination="Lr8-WE-WhT" id="SeZ-wR-wI0"/>
+                        <outlet property="inputTextView" destination="9JJ-jY-u1g" id="XqP-cn-Rkv"/>
+                        <outlet property="inputViewBottomMargin" destination="yPr-uR-xlp" id="EnY-9I-OVJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
