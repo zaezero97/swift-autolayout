@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     var chatData = [String]()
+    @IBOutlet weak var inputTextViewHeightConstrint: NSLayoutConstraint!
     @IBOutlet weak var inputViewBottomMargin: NSLayoutConstraint!
     @IBOutlet weak var chatTableView: UITableView!{
         didSet{
@@ -17,7 +18,11 @@ class ViewController: UIViewController {
             chatTableView.dataSource = self
         }
     }
-    @IBOutlet weak var inputTextView: UITextView!
+    @IBOutlet weak var inputTextView: UITextView!{
+        didSet{
+            inputTextView.delegate = self
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -73,11 +78,25 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
         if indexPath.row % 2 == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! MyCell
             cell.textView.text = chatData[indexPath.row]
+            cell.selectionStyle = .none
             return cell
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "yourCell", for: indexPath) as! YourCell
             cell.textView.text = chatData[indexPath.row]
+            cell.selectionStyle = .none
             return cell
+        }
+    }
+}
+
+extension ViewController : UITextViewDelegate{
+    func textViewDidChange(_ textView: UITextView) {
+        if textView.contentSize.height <= 40{
+            inputTextViewHeightConstrint.constant = 40
+        }else if textView.contentSize.height >= 100{
+            inputTextViewHeightConstrint.constant = 100
+        }else{
+            inputTextViewHeightConstrint.constant = textView.contentSize.height
         }
     }
 }
