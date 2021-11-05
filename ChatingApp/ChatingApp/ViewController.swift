@@ -26,18 +26,26 @@ class ViewController: UIViewController {
 }
 extension ViewController{
     @objc func keyboardWillShow(noti : Notification){
-        print("will show")
         let notiInfo = noti.userInfo!
         let keyboardFrame = notiInfo[UIResponder.keyboardFrameEndUserInfoKey] as! CGRect
+        let animationDuration = notiInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! TimeInterval
         
-        inputViewBottomMargin.constant = keyboardFrame.size.height
+        
+        UIView.animate(withDuration: animationDuration) {
+            self.inputViewBottomMargin.constant = keyboardFrame.size.height - self.view.safeAreaInsets.bottom
+            self.view.layoutIfNeeded()
+        }
     }
     @objc func keyboardDidHide(noti : Notification){
-        print("did hide")
         let notiInfo = noti.userInfo!
         let keyboardFrame = notiInfo[UIResponder.keyboardFrameEndUserInfoKey] as! CGRect
+        let animationDuration = notiInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! TimeInterval
         
-        inputViewBottomMargin.constant = 0
+        
+        UIView.animate(withDuration: animationDuration) {
+            self.inputViewBottomMargin.constant = 0
+            self.view.layoutIfNeeded()
+        }
     }
 }
 
